@@ -8,6 +8,8 @@ import logo from '../src/assets/images/logo.png';
 import {colors} from './colors/color';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import {styles} from './style/styles';
+import TrailerPlayer from './screens/TrailerPlayer';
+import MovieScreen from './screens/MovieScreen';
 
 const Stack = createStackNavigator();
 
@@ -57,6 +59,8 @@ export default class MainStackScreen extends Component {
           }}
         />
         <Stack.Screen name="LoginScreen" component={LoginScreen} />
+        <Stack.Screen name="TrailerPlayer" component={TrailerPlayer} />
+        <Stack.Screen name="MovieScreen" component={MovieScreen} />
       </Stack.Navigator>
     );
   }
