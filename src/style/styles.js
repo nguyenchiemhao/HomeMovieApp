@@ -109,30 +109,103 @@ export const styles = StyleSheet.create({
   },
   //-------Movie Screen--------
   MovieConatainer: {
-    backgroundColor: '#333',
+    backgroundColor: '#000',
   },
   // slides
   movieSlideContainer: {
-    height: 170,
-    paddingHorizontal: 8,
-    marginBottom: 16,
+    height: 200,
+    marginBottom: 8,
+    overflow: 'hidden',
+  },
+  slidewrapper: {},
+  slideImageItem: {
+    width: '100%',
+    height: '100%',
+    justifyContent: 'center',
+    resizeMode: 'stretch',
+  },
+  slideTitleBox: {
+    position: 'absolute',
+    bottom: 0,
+    borderWidth: 0,
+    right: 0,
+    left: 0,
+  },
+  slideTitleItem: {
+    alignSelf: 'flex-start',
+    color: 'white',
+    fontSize: 16,
+    marginLeft: 20,
+    fontWeight: 'bold',
+  },
+  slideDesItem: {
+    alignSelf: 'flex-start',
+    color: 'white',
+    fontSize: 13,
+    marginLeft: 20,
   },
   // Trailers
+  movieTrailerImage: {
+    width: '100%',
+    height: '100%',
+    justifyContent: 'center',
+    resizeMode: 'stretch',
+  },
+  movieTrailerImageContainer: {
+    width: 100,
+    height: 100,
+    borderRadius: 100,
+    overflow: 'hidden',
+    marginRight: 8,
+    borderWidth: 1,
+    borderColor: 'white',
+  },
   movieTrailerContainer: {
-    height: 170,
+    height: 100,
     paddingHorizontal: 8,
-    marginBottom: 16,
+    marginBottom: 8,
+  },
+  // movie
+  movieImage: {
+    width: '100%',
+    height: '100%',
+    justifyContent: 'center',
+    resizeMode: 'stretch',
+  },
+  movieImageContainer: {
+    width: 120,
+    height: 170,
+    borderRadius: 10,
+    overflow: 'hidden',
+    marginRight: 8,
+  },
+  movieTitleBox: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 4,
+  },
+  movieTitle: {
+    color: 'white',
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginLeft: 8,
+  },
+  allBtton: {
+    color: 'white',
+    fontSize: 14,
+    marginRight: 16,
   },
   // Feature Films
   movieFeatureFilmContainer: {
     height: 170,
     paddingHorizontal: 8,
-    marginBottom: 16,
+    marginBottom: 8,
   },
   // Television Series
   movieTelevisionSeriesContainer: {
     height: 170,
     paddingHorizontal: 8,
-    marginBottom: 100, // last item need it
+    marginBottom: 70, // last item need it
   },
 });
